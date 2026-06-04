@@ -44,8 +44,8 @@ USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=Google \
     ro.soc.model=GS101 \
-    ro.circle.device.tier=flagship \
-    ro.circle.device.codename=oriole
+    ro.vendor.circle.device.tier=flagship \
+    ro.vendor.circle.device.codename=oriole
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -54,6 +54,6 @@ PRODUCT_PACKAGES += \
 
 # Kernel security features (Tensor G1 supports all)
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.circle.kernel.kaslr=true \
-    ro.circle.kernel.seccomp=true \
-    ro.circle.kernel.lockdown=true
+    ro.vendor.circle.kernel.kaslr=true \
+    ro.vendor.circle.kernel.seccomp=true \
+    ro.vendor.circle.kernel.lockdown=true
